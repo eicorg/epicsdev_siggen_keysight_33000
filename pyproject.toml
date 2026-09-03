@@ -1,0 +1,10 @@
+[project]
+name = "keysight_33000"
+version = "0.0.1"
+description = "EPICS PVAccess server for Keysight 333xxxx Waveform Signal Generators"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
