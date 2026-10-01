@@ -1,10 +1,32 @@
-[project]
-name = "keysight_33000"
-version = "0.0.1"
-description = "EPICS PVAccess server for Keysight 333xxxx Waveform Signal Generators"
-dependencies = []
-
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[project]
+name = "epicsdev_siggen_keysight_33000"
+version = "1.0.0"
+authors = [
+    { name = "Andrey Sukhanov", email = "sukhanov@bnl.gov" },
+]
+description = "EPICS PVAccess server for Keysight/Agilent 33000 series function generators"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "epicsdev>=3.3.1",
+    "pyvisa>=1.14",
+    "pyvisa-py>=0.7.2",
+    "psutil>=7.2.2",
+    "phoebusgen>=3.3.0",
+]
+
+[project.scripts]
+epicsdev_siggen_keysight_33000 = "epicsdev_siggen_keysight_33000.__main__:main"
+
+[project.urls]
+"Homepage" = "https://github.com/eicorg/epicsdev_siggen_keysight_33000"
+"Bug Tracker" = "https://github.com/eicorg/epicsdev_siggen_keysight_33000"
