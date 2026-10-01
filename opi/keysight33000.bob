@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <display version="2.0.0">
+    <name>Keysight 33000</name>
+    <width>1080</width>
+    <height>300</height>
+    <widget type="label" version="2.0.0">
+      <name>title</name>
+      <x>20</x>
+      <y>10</y>
+      <width>180</width>
+      <height>30</height>
+      <text>Keysight 33000</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>genIDN</name>
+      <x>210</x>
+      <y>14</y>
+      <width>470</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:genIDN</pv_name>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>dateTime</name>
+      <x>700</x>
+      <y>14</y>
+      <width>180</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:dateTime</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>resource_lbl</name>
+      <x>890</x>
+      <y>14</y>
+      <width>40</width>
+      <height>20</height>
+      <text>VISA:</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>visaResource</name>
+      <x>935</x>
+      <y>14</y>
+      <width>130</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:visaResource</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>srvStatus_lbl</name>
+      <x>20</x>
+      <y>50</y>
+      <width>100</width>
+      <height>20</height>
+      <text>Server:</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>srvStatus</name>
+      <x>70</x>
+      <y>50</y>
+      <width>790</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:status</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>state_lbl</name>
+      <x>20</x>
+      <y>85</y>
+      <width>65</width>
+      <height>20</height>
+      <text>Run/Stop:</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>server</name>
+      <x>90</x>
+      <y>85</y>
+      <width>110</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:server</pv_name>
+      <items>
+        <item>Start</item>
+        <item>Stop</item>
+        <item>Clear</item>
+        <item>Exit</item>
+        <item>Started</item>
+        <item>Stopped</item>
+        <item>Exited</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>sleep_lbl</name>
+      <x>410</x>
+      <y>85</y>
+      <width>40</width>
+      <height>20</height>
+      <text>Sleep:</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>sleep</name>
+      <x>450</x>
+      <y>85</y>
+      <width>50</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:sleep</pv_name>
+      <precision>2</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>cycleTime_lbl</name>
+      <x>510</x>
+      <y>85</y>
+      <width>50</width>
+      <height>20</height>
+      <text>Period:</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>cycleTime</name>
+      <x>560</x>
+      <y>85</y>
+      <width>60</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:cycleTime</pv_name>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>hb_lbl</name>
+      <x>640</x>
+      <y>85</y>
+      <width>30</width>
+      <height>20</height>
+      <text>HB:</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>HEARTBEAT</name>
+      <x>670</x>
+      <y>85</y>
+      <width>70</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:HEARTBEAT</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>channel_lbl</name>
+      <x>20</x>
+      <y>125</y>
+      <width>90</width>
+      <height>20</height>
+      <text>Channel 1</text>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>c01Output_lbl</name>
+      <x>20</x>
+      <y>150</y>
+      <width>50</width>
+      <height>20</height>
+      <text>Output:</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>c01Output</name>
+      <x>75</x>
+      <y>150</y>
+      <width>75</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:c01Output</pv_name>
+      <items>
+        <item>OFF</item>
+        <item>ON</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>c01Load_lbl</name>
+      <x>165</x>
+      <y>150</y>
+      <width>40</width>
+      <height>20</height>
+      <text>Load:</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>c01Load</name>
+      <x>210</x>
+      <y>150</y>
+      <width>70</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:c01Load</pv_name>
+      <items>
+        <item>50</item>
+        <item>INF</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>c01Polarity_lbl</name>
+      <x>295</x>
+      <y>150</y>
+      <width>55</width>
+      <height>20</height>
+      <text>Polarity:</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>c01Polarity</name>
+      <x>355</x>
+      <y>150</y>
+      <width>85</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:c01Polarity</pv_name>
+      <items>
+        <item>NORMal</item>
+        <item>INVerted</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>c01WaveType_lbl</name>
+      <x>455</x>
+      <y>150</y>
+      <width>40</width>
+      <height>20</height>
+      <text>Wave:</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>c01WaveType</name>
+      <x>500</x>
+      <y>150</y>
+      <width>85</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:c01WaveType</pv_name>
+      <items>
+        <item>SIN</item>
+        <item>SQU</item>
+        <item>RAMP</item>
+        <item>PULS</item>
+        <item>NOIS</item>
+        <item>DC</item>
+        <item>USER</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>c01Frequency_lbl</name>
+      <x>600</x>
+      <y>150</y>
+      <width>60</width>
+      <height>20</height>
+      <text>Freq [Hz]:</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>c01Frequency</name>
+      <x>665</x>
+      <y>150</y>
+      <width>105</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:c01Frequency</pv_name>
+      <format>2</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>c01Amplitude_lbl</name>
+      <x>785</x>
+      <y>150</y>
+      <width>65</width>
+      <height>20</height>
+      <text>Amp [Vpp]:</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>c01Amplitude</name>
+      <x>855</x>
+      <y>150</y>
+      <width>90</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:c01Amplitude</pv_name>
+      <format>3</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>c01Offset_lbl</name>
+      <x>600</x>
+      <y>175</y>
+      <width>60</width>
+      <height>20</height>
+      <text>Offset [V]:</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>c01Offset</name>
+      <x>665</x>
+      <y>175</y>
+      <width>105</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:c01Offset</pv_name>
+      <format>3</format>
+      <precision>3</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>scpi_lbl</name>
+      <x>20</x>
+      <y>215</y>
+      <width>40</width>
+      <height>20</height>
+      <text>SCPI:</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>instrCmdS</name>
+      <x>65</x>
+      <y>215</y>
+      <width>260</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:instrCmdS</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>reply_lbl</name>
+      <x>340</x>
+      <y>215</y>
+      <width>40</width>
+      <height>20</height>
+      <text>Reply:</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>instrCmdR</name>
+      <x>385</x>
+      <y>215</y>
+      <width>680</width>
+      <height>20</height>
+      <pv_name>pva://keysight33000:0:instrCmdR</pv_name>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </display>
